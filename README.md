@@ -30,7 +30,7 @@
 ### 記録
 
 ```bash
-git clone https://github.com/Sakamochanq/Sushi-Stroke.git
+git clone https://github.com/Sakamochanq/Sushida-Stroke.git
 ```
 リポジトリをローカルにクローンして、結果を記述しコミットします。  
 記録方法は統一したいので [Template.md](./docs/Template.md) を元に記述していきます。 
