@@ -1,0 +1,40 @@
+<html>
+
+    <head>
+        <title>Sushida Stroke Generator</title>
+        <link rel="stylesheet" href="./assets/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="content-wrapper" align="center">
+                <p class="logo">Sushida Stroke Generator 🍣</p>
+                <br>
+                <br>
+                <hr class="title-line" width="500px">
+                <br>
+                <br>
+                <div class="control-form" align="center">
+                    <label class="selectbox-3">
+                        <select>
+                            <option value="3000">お手軽 3000円コース</option>
+                            <option value="5000">お勧め 5000円コース</option>
+                            <option value="10000">高級 10000円コース</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <input type="number" id="Count" placeholder=" 円分のお寿司をゲット" class="textBox"><br><br>
+                    <input type="number" id="Key" placeholder=" 正しく打ったキーの数" class="textBox"><br><br>
+                    <input type="number" id="Average" placeholder=" 平均キータイプ数" class="textBox"><br><br>
+                    <input type="number" id="Mistake" placeholder="ミスタイプ数" class="textBox">
+                    <button class="download-button" onclick="generateMarkdown()">Created At</button>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+    <script src="./assets/script.js"></script>
+</html>

@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    user-select: none;
+    color: rgb(90, 90, 90);
+    background-color: rgb(250, 250, 250);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    width: 70%;
+    height: 80%;
+
+    border-radius: 50px;
+    box-shadow:  5px 5px 11px #e8e8e8, -5px -5px 11px #ffffff;
+
+    .content-wrapper {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+
+        .logo {
+            font-size: 30px;
+        }
+        .control-form {
+            label {
+                font-size: 15px;
+            }
+            .textBox {
+                text-align: center;
+                width: 400px;
+                height: 40px;
+                border: 1px solid #d2d2d2;
+                border-radius: 3px;
+                background: #f3f3f3;
+                font-size: 1em;
+                line-height: 1.5;
+                color: rgb(90, 90, 90);
+            }
+            .selectbox-3 {
+                display: inline-flex;
+                align-items: center;
+                position: relative;
+            }
+            .selectbox-3::after {
+                position: absolute;
+                right: 15px;
+                width: 10px;
+                height: 7px;
+                background-color: #535353;
+                clip-path: polygon(0 0, 100% 0, 50% 100%);
+                content: '';
+                pointer-events: none;
+            }
+            .selectbox-3 select {
+                appearance: none;
+                min-width: 230px;
+                height: 2.8em;
+                padding: .4em calc(.8em + 30px) .4em .8em;
+                border: 1px solid #d0d0d0;
+                border-radius: 3px;
+                background-color: #fff;
+                color: #333333;
+                font-size: 1em;
+                cursor: pointer;
+            }
+            .download-button {
+                margin-top: 40px;
+                width: 200px;
+                height: 45px;
+                color: rgb(90, 90, 90);
+                padding: 0.7em 1.7em;
+                font-size: 18px;
+                border-radius: 0.5em;
+                background: #f0f0f0;
+                cursor: pointer;
+                border: 1px solid #e8e8e8;
+                transition: all 0.3s;
+                box-shadow:  2px 2px 6px #e8e8e8, -2px -2px 6px #ffffff;
+            }
+            .download-button:active{
+                color: rgb(90, 90, 90);
+                box-shadow:  1px 1px 3px #ffffff, -1px -1px 3px #f8f8f8;
+            }
+            .download-button:hover {
+                background-color: #f3f3f3;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main-container {
+        width: 90%;
+        height: 80%;
+        .content-wrapper {
+            .logo {
+                font-size: 20px;
+            }    
+            .title-line {
+                width: 250px;
+            }
+            .control-form {
+                .textBox {
+                    width: 250px;
+                    height: 30px;
+                }
+                .download-button {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
