@@ -93,7 +93,7 @@ const generateMarkdown = () => {
     var mistake = document.getElementById("Mistake").value;
 
     //Validation
-    if(count == "" && key == "" && average == "" && mistake == ""){
+    if(count == "" || key == "" || average == "" || mistake == ""){
         alert("全ての項目を入力する必要があります。");
         return;
     }
